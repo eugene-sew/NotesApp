@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Notes App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Eugene.Dev Notes</h2>
+
+        <div class="notes">
+          <input
+            type="text"
+            class="note-title"
+            placeholder="note title"
+            name="note-title"
+            id="note-title"
+          />
+
+          <textarea
+            name="note-body"
+            id="note-body"
+            class="note-body"
+            cols="30"
+            rows="10"
+            placeholder="Notes..."
+          ></textarea>
+        </div>
+        <button type="button" class="add-btn" id="add-btn">Add Note</button>
+      </div>
+
+      <div class="sidebar">
+        <h2>Recents</h2>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          class="search"
+          placeholder="search notes..."
+        />
+        <button id="clear">Clear</button>
+        <ul id="recents"></ul>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
